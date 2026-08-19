@@ -65,37 +65,78 @@ ${message || "No additional message."}`;
 
           <div className="contact-buttons">
 
-            <a
-              href="tel:08540070707"
-              className="contact-button primary"
-            >
-              CALL 08540070707
-              <span>↗</span>
-            </a>
+  <a
+    href="tel:08540070707"
+    className="contact-button primary"
+  >
+    CALL 08540070707
+    <span>↗</span>
+  </a>
 
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=SPARTNS+FITNESS+Hadapsar+Pune"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-button"
-            >
-              GET DIRECTIONS
-              <span>↗</span>
-            </a>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=SPARTNS+FITNESS+Hadapsar+Pune"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="contact-button"
+  >
+    GET DIRECTIONS
+    <span>↗</span>
+  </a>
 
-          </div>
+  <a
+    href="https://www.instagram.com/spartnsfitness/?hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="contact-instagram"
+    aria-label="Visit SPARTNS FITNESS on Instagram"
+  >
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+
+      <circle
+        cx="17.5"
+        cy="6.5"
+        r="1.2"
+        fill="currentColor"
+      />
+    </svg>
+  </a>
+
+</div>
 
           <div className="contact-address">
 
             <h3>SPARTNS FITNESS</h3>
 
-            <p>
+            <h2p>
               Survey No 209/5, Manjari Road,
               <br />
               Capital Plaza, 1st Floor, DP Road,
               <br />
               Hadapsar, Pune, Maharashtra 412028
-            </p>
+            </h2p>
 
           </div>
 
@@ -331,50 +372,18 @@ ${message || "No additional message."}`;
        <div className="footer-bottom">
 
   <span>
-    © 2025 SPARTNS FITNESS
+    © 2026 SPARTNS FITNESS
   </span>
 
-  <span className="footer-location">
+  {/* <span className="footer-location">
     HADAPSAR, PUNE • MAHARASHTRA
-  </span>
+  </span> */}
 
-  <a href="#contact">
+  {/* <a href="#contact">
     CONTACT ↗
-  </a>
+  </a> */}
 
-  <a
-  href="https://www.instagram.com/spartnsfitness/?hl=en"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="instagram-link"
-  aria-label="Instagram"
->
-  <svg
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-  >
-    <rect
-      x="3"
-      y="3"
-      width="18"
-      height="18"
-      rx="5"
-    />
-    <circle
-      cx="12"
-      cy="12"
-      r="4"
-    />
-    <circle
-      cx="17.5"
-      cy="6.5"
-      r="1"
-      fill="currentColor"
-      stroke="none"
-    />
-  </svg>
-</a>
+  
 
 </div>
 

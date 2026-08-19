@@ -143,7 +143,6 @@ a {
   content: "";
 
   position: absolute;
-
   inset: 0;
 
   background-image:
@@ -157,11 +156,11 @@ a {
     url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=2200&q=90");
 
   background-size: cover;
-  background-position: center;
+  background-position: center 42%;
 
   filter: grayscale(100%);
 
-  transform: scale(1.02);
+  transform: none;
 
   z-index: 0;
 }
@@ -1315,7 +1314,7 @@ a {
 ========================================= */
 
 .training-section {
-  margin-top: 140px;
+  margin-top: 0px;
   width: 100%;
 
   display: grid;
@@ -2263,6 +2262,51 @@ a {
   transition: 0.3s ease;
 }
 
+/* CONTACT INSTAGRAM */
+
+.contact-instagram {
+  width: 52px;
+  height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(16, 17, 16, 0.35);
+
+  color: #101110;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.25s ease;
+}
+
+.contact-instagram svg {
+  width: 22px;
+  height: 22px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+
+.contact-instagram .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.contact-instagram:hover {
+  background: #101110;
+  color: #d8ff25;
+  border-color: #101110;
+
+  transform: translateY(-2px);
+}
+
 .contact-button.primary {
   background: #d8ff25;
   border-color: #d8ff25;
@@ -2510,27 +2554,22 @@ a {
 
 .footer-bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 40px;
+  grid-template-columns: 1fr 1fr auto;
 
-  align-items: center;
-
-  padding-top: 22px;
+  padding-top: 17px;
 
   color: #858984;
 
-  font-size: 8px;
-  letter-spacing: 1.2px;
+  font-size: 7px;
+  letter-spacing: 1px;
 }
 
-.footer-bottom a {
-  color: #d8ff25;
-  text-decoration: none;
-
+.footer-bottom .footer-location {
   text-align: center;
 }
 
-.footer-location {
-  text-align: center;
+.footer-bottom > a {
+  justify-self: end;
 }
 
 
@@ -2807,7 +2846,7 @@ a {
 
 /* INSTAGRAM ICON */
 
-.instagram-link {
+/* .instagram-link {
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -2843,7 +2882,7 @@ a {
 .instagram-link .instagram-dot {
   fill: #d8ff25 !important;
   stroke: none !important;
-}
+} */
 
 /* =========================================
    GALLERY LIGHTBOX
@@ -3240,8 +3279,96 @@ a {
     text-align: left;
   }
 
-  .instagram-link {
+  /* .instagram-link {
     justify-self: start;
-  }
+  } */
 
+}
+
+/* CONTACT INSTAGRAM ICON */
+
+.contact-instagram {
+  width: 48px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #101110;
+  color: #101110;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.contact-instagram svg {
+  width: 24px;
+  height: 24px;
+
+  display: block;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.contact-instagram .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.contact-instagram:hover {
+  background: #101110;
+  color: #d8ff25;
+}
+
+/* =========================================
+   CONTACT INSTAGRAM
+========================================= */
+
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-instagram {
+  width: 48px !important;
+  height: 48px !important;
+
+  min-width: 48px !important;
+  min-height: 48px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box;
+
+  border: 1px solid #101110 !important;
+  background: transparent !important;
+
+  color: #101110 !important;
+
+  text-decoration: none !important;
+
+  flex: 0 0 52px !important;
+}
+
+.contact-instagram svg {
+  display: block !important;
+
+  width: 24px !important;
+  height: 24px !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  color: #101110 !important;
+}
+
+.contact-instagram:hover {
+  background: #101110 !important;
+  color: #d8ff25 !important;
 }
